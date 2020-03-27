@@ -17,12 +17,11 @@
                     <p> {{outfit.occasion}}</p>
                 </div>
             </div>
-
         <div id="icon-div">
             {{#if outfit.shared}}
-                <div><a href="/outfit/unshare/{{outfit._id}}"> <img src="/images/share_btn.png" alt="Unshare" class="outfit-feed-icons"></a></div>
+                <div><a href="/outfit/unshare/{{outfit._id}}"> <img src="/images/icon_unshare.png" alt="Unshare" class="outfit-feed-icons"></a></div>
             {{else}}
-                <div><a href="/outfit/share/{{outfit._id}}"> <img src="/images/icon_unshare.png" alt="Share" class="outfit-feed-icons"></a></div>
+                <div><a href="/outfit/share/{{outfit._id}}"> <img src="/images/share_btn.png" alt="Share" class="outfit-feed-icons"></a></div>
             {{/if}}
             <a href="/outfit/update/{{outfit._id}}"><img src="/images/icon_update.png" alt="Update" class="outfit-feed-icons"></a>
             <a href="/outfit/delete/{{outfit._id}}"><img src="/images/delete_bin.png" alt="Delete" class="outfit-feed-icons"></a>
