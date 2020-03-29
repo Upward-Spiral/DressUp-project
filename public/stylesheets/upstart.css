@@ -4,82 +4,167 @@
     width: 100%;
   }
 
-
-
-  #intro{
+  #intro-BG {
+        
+    background-image: url(../images/m_intro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/fitting_room_intro.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 540px;
+    height: 100vh;
     width: 100vw;
-    margin: auto 0px;
-    /* margin-top: 60px; */
   }
 
-  .intro_info{
-    margin: auto 0px;
-    /* margin: 0 0 160px 0; */
+  #intro{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(172, 92, 88, 0.6);
+    width: 65vw;
+    height: 65vh;
+    border-radius: 50px;
   }
 
-  .dress_up{
-    font-size: 30px;
-    color: rgb(173, 66, 60);
+  #intro-title h1 {
+    color: rgb(236, 206, 205);
+
     font-weight: bold;
   }
 
-  #btn-primary {
-    background-color: rgb(230, 169, 134) !important;
-    border-color:rgb(230, 169, 134) !important;
-    margin: auto;
+  #intro-btns{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: white;
-  }
-
-  #btn_intro{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 40px;
   }
 
-  #btn-primary-orange{
-    background-color: rgb(230, 169, 134) !important;
-    border-color:rgb(230, 169, 134) !important;
+
+  .btn-primary {
     margin: auto;
     display: flex;
     justify-content: center;
-    color: white;
-    margin-left: 15px;
+    /* color: white !important; */
+    margin-top: 30px;
+    width: 100px;
+  }
+
+
+  #btn-primary-orange{
+    background-color: rgb(230, 169, 134) !important;
+    border-color:rgb(230, 169, 134) !important;
+
   }
 
   #btn-primary-green{
     background-color: rgb(125, 179, 134) !important;
     border-color:rgb(125, 179, 134) !important;
+
+  }
+
+  .login-direct-btn {
+    color: white !important;
+  }
+
+
+
+
+  #signup-frame{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 10px 40px 10px;
+  }
+
+
+  .icon-check-img{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .signup-confirm{
+    font-size: 30px;
+  }
+
+  .signup-info{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .login-direct-btn{
+    color: white;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  
+  #intro-BG {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: auto 0px;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20vw;
+  }
+
+  #intro-title h1 {
+    color:rgb(236, 206, 205);
+    font-weight: bold;
+  }
+
+  #intro-btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center !important;
+      margin-top: 40px;
+      width: 100%;
+  }
+
+  .btn-primary {
     margin: auto;
     display: flex;
     justify-content: center;
-    color: white;
-    margin-right: 15px;
+    /* color: white; */
+    margin-top: 30px;
+    width: 100px;
   }
 
-   #btn-primary-green-login{
+  #btn-primary-orange{
+    background-color: rgb(230, 169, 134) !important;
+    border-color:rgb(230, 169, 134) !important;
+  }
+
+  #btn-primary-green{
     background-color: rgb(125, 179, 134) !important;
     border-color:rgb(125, 179, 134) !important;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    color: white;
   }
 
+  .login-direct-btn {
+    color: white !important;
+  }
 
   #form-frame-inside {
       background: #fff;
@@ -90,18 +175,19 @@
 
   }
 
-  span {
-    display:block;
-    padding: 2px 5px;
+  #form-frame-inside p, 
+  #form-frame-inside a {
     font-size: 10px;
+    display: inline;
   }
 
   .login-check{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
 
+    margin: auto;
+  
+    display:block;
+    padding: 2px 5px;
+  }
 
   .login-link{
     text-decoration: underline;
@@ -114,7 +200,6 @@
     align-items: center;
     margin:40px 10px 40px 10px;
   }
-
 
   .icon-check-img{
     width: 250px;

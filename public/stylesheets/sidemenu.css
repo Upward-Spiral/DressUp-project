@@ -1,4 +1,6 @@
-#sidemenu-box {
+
+@media screen and (max-width: 600px) {
+    #sidemenu-box {
     width: 70vw;
     height: 100vh;
     background-color: white;
@@ -11,37 +13,88 @@
     justify-content: center;
     z-index: 50;
     /* align-items: center; */
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;   
+    }
+
+    #sidemenu-open-btn {
+        width: 50px;
+        position: fixed;
+        right: 0px;
+        top: 20vh;
+    }
+
+    .invisible {
+        visibility: hidden;
+    }    
+
+    .visible {
+        visibility: visible;
+    }
+
+    #sidemenu-close-btn {
+        width: 50px;
+        position: absolute;
+        left: -20px;
+        top: 20vh;
+        right: px;
+        top: 20vh;
+        z-index: 70;
+    }
+
+    #logout-btn {
+        position: absolute;
+        bottom: 20px;
+        
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    #sidemenu-box {
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+        padding: 10px;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 50;
+        /* align-items: center; */
+        border-left: 1px solid lightgrey;
+        
+    }
     
-}
-
-#sidemenu-open-btn {
-    width: 50px;
-    position: fixed;
-    right: 0px;
-    top: 20vh;
-}
-
-.invisible {
-    visibility: hidden;
-}    
-
-.visible {
-    visibility: visible;
-}
-
-#sidemenu-close-btn {
-    width: 50px;
-    position: absolute;
-    left: -20px;
-    top: 20vh;
-    right: px;
-    top: 20vh;
-    z-index: 70;
-}
-
-#logout-btn {
-    position: absolute;
-    bottom: 20px;
+    #sidemenu-open-btn {
+        width: 50px;
+        position: fixed;
+        right: 0px;
+        top: 20vh;
+    }
     
+    .invisible {
+        visibility: hidden;
+    }    
+    
+    .visible {
+        visibility: visible;
+    }
+    
+    #sidemenu-close-btn {
+        width: 50px;
+        position: absolute;
+        left: -20px;
+        top: 20vh;
+        right: px;
+        top: 20vh;
+        z-index: 70;
+    }
+    
+    #logout-btn {
+        position: absolute;
+        bottom: 20px;
+        
+    }
 }

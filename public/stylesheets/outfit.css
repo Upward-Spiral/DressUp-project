@@ -1,9 +1,5 @@
 @media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-
+ 
   .shared-outfit {
       width: 95vw;
       height: 30vh;
@@ -266,8 +262,268 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+    .shared-outfit {
+        width: 95vw;
+        height: 30vh;
+      max-height: 22vh;
+    }
+  
+    .shared-outfit-home {
+      width: 40vw;
+      height: 30vh;
+    max-height: 22vh;
+  }
+    .shared-outfit p{
+  
+    }
+    
+    .mainH2 {
+        margin-top: 20px;
+    }
+    .shared-outfit-home img{
+  
+      max-height: 18vh;
+      width: 38vw;
+      border-radius: 5px;
+      }
+  
+      .shared-outfit img{
+  
+          max-height: 18vh;
+          /* height: 15vh; */
+          border-radius: 5px;
+      }
+  
+  #fitting-room-frame {
+      width: 96vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center
+  }
+  
+  #fitting-room-frame-inside {
+      width: 95vw;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+  }
+  
+  #fitting-room-frame-inside a{
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      align-items: center
+  }
+  
+      .list-group-item {
+          margin: 2px auto;
+          width: 96vw;
+      }
+  
+      /* shared_outfit_thumb.hbs,  outfit/list */
+      .wardrobe{
+          margin: 20px 130px;
+      }
+      .list-btns{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+      }
+      #btn-primary-items{
+          background-color: rgb(250, 116, 112) !important;
+          border-color:rgb(250, 116, 112) !important;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          color: white;
+          margin: 0;
+      }
+      #btn-primary-outfits{
+          background-color: rgb(250, 116, 112) !important;
+          border-color:rgb(250, 116, 112) !important;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          color: white;
+          margin: 0;
+      }
+      #shared_outfit_thumb_framework{
+          background: white;
+          margin: 20px 20px;
+          width: 91vw;
+          border-radius: 5px;
+      }
+  
+      #fitting-room-frame {
+          display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      }
+  
+      .framework_inside{
+          display: flex;
+          justify-content: space-between;
+          width: 90vw;
+      }
+  
+      .desc{
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          margin-right: 50px;
+          margin-left: 10px;
+      }
+  
+      .desc-frame{
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+      }
+  
+      h4{
+          color: black;
+      }
+      h4:hover{
+          text-decoration: underline;
+          color: black;
+      }
+  
+      .thumb-img{
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          margin-left: 0px;
+          margin-right: 0px;
+          display: flex;
+          align-self: center;
+          border-style: hidden;
+      }
+      .thumb-img:hover {
+          box-shadow: 0 0 2px 1px rgba(186, 188, 189, 0.5);
+      }
+  
+      .img-thumb{
+          height: 100%;
+          width: 100%;
+      }
+  
+              /* shared_outfit_thumb.hbs */
+      .like_items_div{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+      }
+  
+      .outfit_thumb_nr{
+          padding-right: 30px;
+          width: max-content;
+      }
+  
+      .heart_icon{
+          position: relative;
+          height: 25px;
+      }
+  
+      .items_icon{
+          position: relative;
+          height: 25px;   
+      }
+  
+  /*  outfit/feed/id*/
+      #detail-form{
+          
+      }
+      #top-image{
+          display: flex;
+          justify-content: center;
+          margin: auto;
+      }
+  
+      .outfit-feed-img{
+          height: 100%;
+           width: -webkit-fill-available;
+      }
+  
+      #outfit-feed-info{
+          display: flex;
+          flex-direction: row;
+          margin-top: 30px;
+      }
+  
+      #outfit-feed-description{
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+      }
+  
+      .outfit-feed-icon-unshare{
+          width: 30px;
+          position: relative;
+          margin: 0px 20px 0px 160px
+      }
+  
+  /*outfit_feed_user_thumb.hbs */
+      #outfit-liked-by{
+          font-size: 20px;
+      }
+  
+      .liked-by-friends{
+          font-size: 15px;
+      }
+  
+      .liked-by-friends-ul{
+          margin: 0;
+      }
+  
+      /* outfit/create */
+      #createH2{
+          font-size: xx-large;
+          display: flex;
+          justify-content: center;
+          margin: 30px 0 30px 0px;
+      }
+  
+      #commentfield{
+          height: 200px;
+      }
+  
+      /* outfit/detail/id */
+      #description{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: row;
+      }
+      #icon-div{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-block-end: 40px;
+          margin-left: 50px
+      }
+          .outfit-feed-icons{
+          width: 30px;
+          position: relative;
+      }
+      .back-btn{
+          position: fixed;
+          bottom: 2vh;
+          right: 91%;
+          /* right: 87vw; */
+          z-index: 20;
+          height: 30px;
+      }
+}
 
 
-/*  */
-/*  */
 

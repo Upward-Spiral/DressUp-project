@@ -1,9 +1,31 @@
 @media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
 
+
+    #navbar-intro{
+        background-color: rgb(173, 66, 60);
+        height: 110px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        /* align-content: center; */
+    }
+
+    .logo-icon{
+        height: 7%;
+        margin-top: 21px;
+        position: fixed;
+    }
+
+    .navH1{
+        margin-top: 16px;
+        margin-left: 50px;
+        position: fixed;
+        font-size: x-large
+    }
+}
+
+@media screen and (min-width: 600px) {
+ 
     #navbar-intro{
         background-color: rgb(173, 66, 60);
         height: 110px;

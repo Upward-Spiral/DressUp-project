@@ -1,0 +1,87 @@
+
+@media screen and (max-width: 600px) {
+
+    .login-BG {
+        background-image: url(../images/m_intro.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #form-frame-inside {
+        background: #fff;
+        padding: 4em 4em 2em;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+  
+    #sub-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+
+    #form-frame-inside p,
+    #form-frame-inside a {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    #form-frame-inside a {
+        text-decoration: underline;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .login-BG {
+        background-image: url(../images/intro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #form-frame-inside {
+        background: #fff;
+        padding: 4em 4em 2em;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left: 15vw;
+    
+    }
+  
+    #sub-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+
+    #form-frame-inside p,
+    #form-frame-inside a {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    #form-frame-inside a {
+        text-decoration: underline;
+        margin-left: 5px;
+    }
+}
+  

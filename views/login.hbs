@@ -3,7 +3,7 @@
 {{#if errorMessage}}
 <div class="error-message">{{ errorMessage }}</div>
 {{/if}}
-<div class="BG">
+<div class="login-BG">
     <form action="/login" method="POST" id="form-frame-inside">
 
         <div class="form-group">
@@ -16,8 +16,12 @@
             <input type="password" required class="form-control" id="password" placeholder="Password" name="password">
         </div>
 
-        <button type="submit" class="btn btn-primary" id="btn-primary-green-login">Login</button>
-        <span class="login-check">Don't have an account yet?  <a href="/signup" class="login-link"> Signup!</a></span>
+        <button type="submit" class="btn btn-primary" id="btn-primary-green">Login</button>
+        <div id="sub-text">
+            <p>Don't have an account yet?</p>  
+            <a href="/signup">Signup!</a>
+        </div>
+        
     </form>
 </div>
 

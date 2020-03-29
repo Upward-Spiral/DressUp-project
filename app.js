@@ -92,5 +92,5 @@ function protect (req,res,next){
 
 // Listener
 app.listen(process.env.PORT, () => {
-  console.log('Webserver is listening on port 3002');
+  console.log(`Webserver is listening on port ${process.env.PORT}`);
 });

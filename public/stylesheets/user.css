@@ -1,4 +1,6 @@
-/* dashboard.hbs*/
+
+@media screen and (max-width: 600px) {
+    /* dashboard.hbs*/
 #home-frame{
     display: flex;
     justify-content: center;
@@ -28,9 +30,39 @@
     margin-right: 80px;
     margin-left: 20px;
 }
+}
 
 
-/*  */
-/*  */
-/*  */
-/*  */
+
+@media screen and (min-width: 600px) {
+    /* dashboard.hbs*/
+#home-frame{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainH2{
+    color: rgb(173, 66, 60);
+}
+
+.H2{
+    margin: 90px auto 0 auto !important; 
+    display: flex;
+    text-align: center;
+}
+
+#add-friend-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+#H4{
+    display: inline;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+}
