@@ -1,0 +1,85 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 233, 212);
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .BG-main {
+    position: relative;
+  }
+  
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  
+  .BG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .sub-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+  
+  a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    color: black;
+  }
+  
+  #form-frame-inside a {
+      text-decoration: underline;
+      margin-left: 5px;
+  }
+   
+  #create-btn{
+    position: fixed;
+    bottom: 2vh;
+    right: 5vw;
+    z-index: 20;
+  }
+  #form-frame{
+      margin: auto 15px;
+  }
+  
+  #form-frame-inside p,
+  #form-frame-inside a {
+      font-size: 10px;
+      margin-bottom: 0px;
+  } 
+  
+  #form-frame-inside {
+      background: #fff;
+      padding: 4em 4em 2em;
+      max-width: 400px;
+      border-radius: 10px;
+  
+    }
+  
+  @media screen and (max-width: 600px) {
+  
+  }
+  
+  
+  @media screen and (min-width: 600px) 
+  {
+    #form-frame-inside {
+      margin-left: 12vw;
+    
+    }
+  }

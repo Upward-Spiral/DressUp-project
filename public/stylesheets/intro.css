@@ -1,0 +1,93 @@
+
+
+
+#intro-BG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-direct-btn {
+  color: white !important;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-title h1 {
+  color: rgb(236, 206, 205);
+  font-weight: bold;
+}
+
+#intro-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100px;
+}
+
+#btn-primary-orange{
+  background-color: rgb(230, 169, 134) !important;
+  border-color:rgb(230, 169, 134) !important;
+}
+
+#btn-primary-green{
+  background-color: rgb(125, 179, 134) !important;
+  border-color:rgb(125, 179, 134) !important;
+}
+
+@media screen and (max-width: 600px) {
+
+  #intro-BG {    
+    background-image: url(../images/m_intro.jpeg);
+    background-position: center;
+    align-items: center;  
+  }
+
+  #intro{
+    background-color: rgba(172, 92, 88, 0.6);
+    width: 65vw;
+    height: 65vh;
+    border-radius: 50px;
+  }
+    
+  .login-direct-btn {
+    color: white !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  
+  #intro-BG {
+    background-image: url(../images/intro.jpg);
+    align-items: flex-start;
+    margin: auto 0px;
+  }
+
+  #intro {
+    margin-left: 20vw;
+  }
+
+  #intro-btns {    
+    width: 100%;
+  }
+}

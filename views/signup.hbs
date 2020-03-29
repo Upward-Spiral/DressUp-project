@@ -1,36 +1,41 @@
-{{>nav_intro}}
+
 {{#if errorMessage}}
 <div class="error-message">{{ errorMessage }}</div>
 {{/if}}
 
-<!--enctype="multipart/form-data"
--->
+<div class="signup-BG">
+    <form action="/signup" method="POST" id="form-frame-inside">
+      <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input class="form-control" type="text" required placeholder="Firstname" name="firstname"> 
+      </div>
 
-<form action="/signup" method="POST" id="form-frame-inside">
-  <div class="form-group">
-    <label for="firstname">Firstname</label>
-    <input class="form-control" type="text" required placeholder="Firstname" name="firstname"> 
-  </div>
+      <div class="form-group">
+        <label for="lastname">Lastname</label>
+        <input class="form-control" type="text" required placeholder="Lastname" name="lastname">
+        
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input class="form-control" type="text" required placeholder="Username" name="username">
+        
+      </div>
+      <div class="form-group">
+        <label for="password">Password </label>
+        <input type="password" required class="form-control" id="password" placeholder="Password" name="password">
+        <p>Must have minimum 8 characters and contain at least one letter, one digit, and one special character.</p>
+      </div>
+      <div class="form-group">
+        <label for="password_check">Repeat password</label>
+        <input type="password" required class="form-control" id="password_check" placeholder="Repeat password" name="password_check" >
+      </div>
+      
+      <button type="submit" class="btn btn-primary" id="btn-primary-green">Signup</button>
+      <div class="sub-text">
+        <p class="login-check">Already have an account?</p> 
+        <a href="/login" class="login-link">Login!</a>
+      </div>
+      
+    </form>
+</div>
 
-   <div class="form-group">
-    <label for="lastname">Lastname</label>
-    <input class="form-control" type="text" required placeholder="Lastname" name="lastname">
-    
-  </div>
-   <div class="form-group">
-    <label for="username">Username</label>
-    <input class="form-control" type="text" required placeholder="Username" name="username">
-    
-  </div>
-  <div class="form-group">
-    <label for="password">Password <span>Must contain minimum 8 characters and 1 number.</span></label>
-    <input type="password" required class="form-control" id="password" placeholder="Password" name="password">
-  </div>
-  <div class="form-group">
-    <label for="password_check">Repeat password</label>
-    <input type="password" required class="form-control" id="password_check" placeholder="Repeat password" name="password_check" >
-  </div>
-  
-  <button type="submit" class="btn btn-primary" id="btn-primary">Signup</button>
-    <span class="login-check">Already have an account? <a href="/login" class="login-link">Login!</a></span>
-</form>

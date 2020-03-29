@@ -1,0 +1,80 @@
+
+
+.icon-check-img{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.signup-confirm{
+    font-size: 30px;
+}
+
+.signup-info{
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-direct-btn{
+    color: white;
+}
+
+.signup-confirm{
+    font-size: 30px;
+}
+
+.signup-info{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .signup-BG {
+        background-image: url(../images/m_intro.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .signup-BG {
+        background-image: url(../images/intro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+
+#signup-frame{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 10px 40px 10px;
+    color: white;
+}
+
+.icon-check-img{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
