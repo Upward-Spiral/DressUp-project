@@ -68,3 +68,53 @@ font-family: San Francisco Pro Text;
     }
 
 }
+
+
+@media screen and (min-width: 600px) 
+{
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(252, 233, 212);
+        font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .BG-main {
+      position: relative;
+    }
+  
+    .BG {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+
+    a, a:hover, a:visited, a:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    
+    #create-btn{
+      position: fixed;
+      bottom: 2vh;
+      right: 5vw;
+      z-index: 20;
+    }
+
+    #form-frame{
+        margin: auto 15px;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p {
+        color: black;
+    }
+
+}
